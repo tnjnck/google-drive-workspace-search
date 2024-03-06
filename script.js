@@ -32,3 +32,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     document.getElementById('searchAll').checked = searchAllChecked;
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Existing code to load last used states
+
+    // Focus on the search term input
+    document.getElementById('searchTerm').focus();
+
+    // Handle form submission
+    document.getElementById('searchForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+        openDriveSearch();
+    });
+});
