@@ -11,10 +11,13 @@
     <label for="driveIds">Enter Shared Drive IDs (comma-separated):</label><br>
     <input type="text" id="driveIds" placeholder="ID1,ID2,ID3..." /><br><br>
 
+    <label for="searchAll">Also search non-workspaces?</label>
+    <input type="checkbox" id="searchAll"><br><br>
+    
     <label for="searchTerm">Enter Search Term:</label><br>
     <input type="text" id="searchTerm" placeholder="Search term" /><br><br>
 
-    <button onclick="openDriveSearch()">Go</button>
+    <button onclick="openDriveSearch()">Search (will open multiple tabs)</button>
 
     <script src="script.js"></script>
 </body>
