@@ -12,7 +12,7 @@
     <label for="driveIds">Enter Shared Drive IDs (comma-separated):</label><br>
     <input type="text" id="driveIds" placeholder="ID1,ID2,ID3..." /><br><br>
 
-    <label for="searchAll">Also search non-workspaces?</label>
+    <label for="searchAll">Also search non-workspace (standard search)</label>
     <input type="checkbox" id="searchAll"><br><br>
     
     <label for="searchTerm">Enter Search Term:</label><br>
@@ -20,8 +20,9 @@
 
     <label for="replaceTab">Open last search in current tab?</label>
     <input type="checkbox" id="replaceTab"><br><br>
+    The last search will be the last ID, or non-workspace Drive.<br><br>
 
-    <button onclick="openDriveSearch()">Search (will open multiple tabs)</button>
+    <button>Search (will open multiple tabs)</button>
     <br><i></i>(Can also press enter)</i>
     </form>
     <script src="script.js"></script>
